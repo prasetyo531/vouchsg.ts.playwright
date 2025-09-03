@@ -2,16 +2,16 @@
 
 A classic Snake game built with Node.js and HTML5 Canvas, featuring modern web technologies and a clean, responsive design.
 
-## Features
+## What We're Looking For:
 
-- **Classic Gameplay**: Grid-based movement with smooth controls
-- **Responsive Controls**: Use arrow keys or WASD to control the snake
-- **Progressive Difficulty**: Speed increases every 50 points
-- **Score System**: Track your current score and persistent high score
-- **Pause/Resume**: Space bar or button to pause anytime
-- **Visual Feedback**: Snake with directional eyes that follow movement
-- **Modern UI**: Gradient backgrounds, smooth animations, and clean design
-- **Responsive Design**: Works on both desktop and mobile screens
+- Your approach to identifying test scenarios
+  in this case, i separate scenario functional and end to end. its align with concept atomic test, so test will cheaper in terms of effort.
+- How you structure your test code
+  i put test in same repository of app, so we dont need clone again
+- Your creativity in finding edge cases
+  you can just refer to /e2e for scenario end to end and /ui for scenario functional
+- Your code organization and readability
+  it can separated into base layer, page layer with pom
 
 ## Installation
 
