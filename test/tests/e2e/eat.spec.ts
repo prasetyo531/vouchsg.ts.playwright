@@ -16,7 +16,7 @@ test.describe('Snake Game - Mocked Food Spawn', () => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
   });
 
-  test.only('@EndToEnd - Ensure snake eats first food and gameover then restart', async ({ page }) => {
+  test('@EndToEnd - Ensure snake eats first food and gameover then restart', async ({ page }) => {
     await page.click('#startBtn');
     await page.waitForTimeout(500);
     await expect(page.locator('#score')).toHaveText('10');
