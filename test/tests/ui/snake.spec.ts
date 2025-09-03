@@ -5,7 +5,7 @@ test.describe('Snake Game', () => {
     await page.goto('/');
   });
 
-  test('@functional - Validate should render the game UI', async ({ page }) => {
+  test('@functional - Validate should render the game', async ({ page }) => {
     await expect(page.locator('h1')).toHaveText('Snake Game');
     await expect(page.locator('#gameCanvas')).toBeVisible();
     await expect(page.locator('#score')).toHaveText('0');
@@ -16,7 +16,7 @@ test.describe('Snake Game', () => {
     await expect(page.locator('#gameOver')).toBeHidden();
   });
 
-  test('@functional - Validate should start the game when clicking Start button', async ({ page }) => {
+  test('@functional - Validate should start the game when clicking start button', async ({ page }) => {
     await page.click('#startBtn');
     await expect(page.locator('#startBtn')).toBeDisabled();
     await expect(page.locator('#pauseBtn')).not.toBeDisabled();

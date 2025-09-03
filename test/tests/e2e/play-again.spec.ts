@@ -5,7 +5,7 @@ test.describe('Snake Game', () => {
     await page.goto('/');
   });
 
-  test('@EndToEnd - Validate should restart game when clicking Play Again', async ({ page }) => {
+  test('@EndToEnd - Validate should restart game when clicking play again', async ({ page }) => {
     await page.click('#startBtn');
 
     await expect(page.locator('#gameOver')).toBeVisible();
